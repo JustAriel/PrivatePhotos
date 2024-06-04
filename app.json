@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "privatePhtoes",
+    "name": "Private Photos",
     "slug": "privatePhtoes",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/privatePhotosLogo2.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/privatePhotosLogo2.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -19,12 +19,23 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/privatePhotosLogo2.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "package": "com.justariel.PrivatePhotos"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/privatePhotosLogo2.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5587e2a3-d385-4252-a48a-cd45984f5e41"
+      }
     }
   }
 }
